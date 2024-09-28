@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F1 Race Dashboard</title>
-  <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Live Data Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <div id="root"></div>
-  <script src="app.js"></script>
+    <header>
+        <h1>F1 Live Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#drivers">Drivers</a></li>
+                <li><a href="#track">Track Map</a></li>
+                <li><a href="#weather">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Race Dashboard</h2>
+            <div id="dashboard-content">
+                <!-- Live data will be injected here from JavaScript -->
+            </div>
+        </section>
+
+        <!-- Drivers Section -->
+        <section id="drivers">
+            <h2>Drivers</h2>
+            <div id="drivers-content">
+                <!-- Drivers data from Drivers.js -->
+            </div>
+        </section>
+
+        <!-- Track Map Section -->
+        <section id="track">
+            <h2>Track Map</h2>
+            <div id="track-map-content">
+                <!-- Track Map from TrackMap.js -->
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Weather Information</h2>
+            <div id="weather-content">
+                <!-- Weather data from Weather.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 F1 Live Data App</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="Dashboard.js"></script>
+    <script src="Drivers.js"></script>
+    <script src="TrackMap.js"></script>
+    <script src="Weather.js"></script>
 </body>
 </html>
